@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Form2 from './Form2'
-import ToDoList from './ToDoList'
+import List from './List'
 
  class Container extends Component {
  
@@ -38,7 +38,7 @@ import ToDoList from './ToDoList'
         return (
             <div>
                 <Form2 handleFormSubmit={ this.handleFormSubmit } handleInputChange={ this.handleInputChange } />
-                <ToDoList tasks={ this.state.tasks }/>
+                <List tasks={ this.state.tasks }/>
             </div>
         )
     }
