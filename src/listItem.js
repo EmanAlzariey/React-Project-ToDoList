@@ -4,8 +4,9 @@ export class listItem extends Component {
     render() {
         return (
             <li>
-               `${this.props.task.newTask} on ${this.props.task.newDate}` 
+               {this.props.newTask} 
             </li>
+            <button onClick={()=>{this.props.editTask(this.props.id)}
         )
     }
 }
