@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Form2 from './Form2'
 import ToDoList from './ToDoList'
 
-export class Container extends Component {
+ class Container extends Component {
  
     constructor() {
         super();
