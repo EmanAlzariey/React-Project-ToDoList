@@ -16,11 +16,11 @@ export class Container extends Component {
     
       handleFormSubmit = (e) => {
         e.preventDefault();
-    
-        let tasks = [...this.state.tasks];
-    
-        tasks.push({newTask: this.state.newTask, newDate: this.state.newDate});
-    
+        let myTask= {
+            newTask: this.state.newTask,
+             newDate: this.state.newDate
+        }
+        let tasks = [...this.state.tasks, myTask];
         this.setState({
           tasks,
           newTask: '',
@@ -29,20 +29,15 @@ export class Container extends Component {
       };
     
       handleInputChange = (e) => {
-        let input = e.target;
-        let name = e.target.name;
-        let value = input.value;
-    
         this.setState({
-          [name]: value
+            [e.target.name]: e.target.value
         })
       };
     
     render() {
         return (
             <div>
-                <Form2 handleFormSubmit={ this.handleFormSubmit } handleInputChange={ this.handleInputChange } 
-                newTask={ this.state.newTask } newDate={ this.state.newDate } />
+                <Form2 handleFormSubmit={ this.handleFormSubmit } handleInputChange={ this.handleInputChange } />
                 <ToDoList tasks={ this.state.tasks }/>
             </div>
         )
