@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class Form2 extends Component {
     render() {
         return (
-            <form onSubmit={this.props.handleFormSubmit}>
+            <form onSubmit={this.props.handleFormSubmit} id="Form">
                 <input type="text" name="newTask" onChange={this.props.handleInputChange} placeholder='Enter Your Task'/>
                 <br/>
                 <br/>
