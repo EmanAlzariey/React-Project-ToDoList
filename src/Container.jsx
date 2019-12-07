@@ -34,6 +34,11 @@ import List from './List'
         })
       };
     
+      deleteTask= (id) => {
+        return this.state.tasks.filter((item,index) => {
+        return index !== id})
+      }
+    
     render() {
         return (
             <div>
