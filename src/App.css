@@ -20,3 +20,25 @@
 .App-link {
   color: #09d3ac;
 }
+#Form input {
+  margin-left: 10px;
+}
+
+#Button {
+  width: 250px;
+  padding: 15px 0;
+  background-color: tomato;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin: 25px 0;
+}
+#Button2 {
+  width:50px;
+  padding: 5px 0;
+  background-color: tomato;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin: 10px 0;
+}
