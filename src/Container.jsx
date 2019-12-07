@@ -38,7 +38,7 @@ import List from './List'
         return (
             <div>
                 <Form2 handleFormSubmit={ this.handleFormSubmit } handleInputChange={ this.handleInputChange } />
-                <List tasks={ this.state.tasks }/>
+                <List tasks={ this.state.tasks } />
             </div>
         )
     }

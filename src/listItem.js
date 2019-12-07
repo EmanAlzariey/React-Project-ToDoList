@@ -7,8 +7,8 @@ export class ListItem extends Component {
             <li>
                {this.props.newTask} 
             </li>
-            <button onClick={()=>{this.props.editTask(this.props.id)}} />
-            <button onClick={()=>{this.props.deleteTask(this.props.id)}} />
+            <button onClick={()=>{this.props.editTask(this.props.id)}}>Edit</button>
+            <button onClick={()=>{this.props.deleteTask(this.props.id)}} >Delete</button>
             </div>
         )
     }
