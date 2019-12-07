@@ -7,7 +7,7 @@ export class List extends Component {
             <ul>
                 {this.props.tasks.map((task,index) => {
                 return <ListItem key={index} id={index} newTask={task.newTask} newDate={task.newDate} 
-                deleteTask={this.props.deleteTask}  editTask={this.props.editTask}
+                deleteTask={this.props.deleteTask(id)}  editTask={this.props.editTask}
                 />
                 })}
             </ul>
