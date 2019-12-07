@@ -20,7 +20,7 @@ import List from './List'
             newTask: this.state.newTask,
              newDate: this.state.newDate
         }
-        let tasks = [...this.state.tasks, myTask];
+        let tasks = [...this.state.tasks,myTask];
         this.setState({
           tasks,
           newTask: '',
